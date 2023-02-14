@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Cardo&family=Montserrat:wght@300&display=swap');
+
+:root {
+  --black: #000; // rgba(0, 0, 0, 1)
+  --dark: #0c0c0c; // rgba(12, 12, 12, 1)
+  --mid: #494949; // rgba(48, 48, 48, 1)
+  --light: #fff; // rgba(255, 255, 255, 1)
+  --accent: #14bc9c; // rgba(20, 188, 156, 1)
+}
+
+.App {
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+  font-family: 'Cardo', serif;
+  font-size: 2em;
+}
+
+.App-header {
+  background-color: var(--dark);
+  min-height: 20vh;
+  color: var(--accent)
+}
+
+.App-content {
+  background-color: var(--light);
+  min-height: 100vh;
+  color: var(--dark)
+}
+
+.App-footer {
+  background-color: var(--black);
+  min-height: 20vh;
+  color: var(--light)
+}
+
+.redtrue {
+  background-color: red;
+}
+
+.greentrue {
+  background-color: green;  
+}
+
+.bluetrue {
+  background-color: blue;
+}
+
+.App-content > div {
+  width: 100px;
+  height: 100px;  
+}
+
+button {
+  min-width: 50px;
+  max-width: 300px;
+  padding: 10px;
+  background-color: var(--accent);
+  color: var(--light);
+  font-family: 'Montserrat', sans-serif;
+  border-radius: 7px;
+  border: solid 2px turquoise;
+    &:hover {
+      background-color: turquoise;
+      cursor: pointer;
+    }
+    &:active {
+      background-color: darkturquoise;
+    }
+}
