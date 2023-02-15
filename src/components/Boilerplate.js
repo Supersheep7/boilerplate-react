@@ -82,6 +82,12 @@ class BoilerplateClass extends React.Component {
             .post(url, obj)
             .then(res => {
                 console.log(res)
+                if (res.status === 200) {
+                    // success: do something
+                }
+                else {
+                    // failure: do something else
+                }
             })
             .catch(err => {
                 console.log('Post error: ')
