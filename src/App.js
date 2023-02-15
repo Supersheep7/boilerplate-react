@@ -8,6 +8,7 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<BoilerplateClass />}/>
+        {/*<Route path="/no" element={<NoBoilerplate />}/>*/}
       </Routes>
     </Router>
   );

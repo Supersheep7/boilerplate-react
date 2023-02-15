@@ -17,11 +17,11 @@ class BoilerplateClass extends React.Component {
         
     }
 
-    setter(key, val) {                              // OK
+    setter(key, val) {                             
         this.setState({[key]: val})
     }
 
-    onoffer(key, val) {                             // OK
+    onoffer(key, val) {                            
                                   
         let arr = this.state[key]
 
@@ -37,7 +37,7 @@ class BoilerplateClass extends React.Component {
 
     }
 
-    defaulter(key) {                                // OK
+    defaulter(key) {                                
 
         if (key === "all") {
             this.setState({
@@ -62,7 +62,7 @@ class BoilerplateClass extends React.Component {
         
    }
 
-    caller(url) {                                   // OK
+    caller(url) {                                   
 
         axios
             .get(url)
@@ -77,7 +77,7 @@ class BoilerplateClass extends React.Component {
 
     }
 
-    poster(url, obj) {
+    poster(url, obj) {                              
         axios
             .post(url, obj)
             .then(res => {
@@ -146,7 +146,7 @@ function Hook() {
     return (
         <div className='flex column space'>
             <h2>This is a hook, and its "int" state is {int}</h2>
-        {/* <button onClick={() => setInt(int + 1)}>Click to add 1 to hook's "int" state</button> */}
+        {/* <button onClick={() => setInt(int + 1)}>Click to add 1 to hook's "int" state</button> */ }
         </div>
     )
 }
